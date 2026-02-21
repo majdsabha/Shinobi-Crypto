@@ -9,63 +9,269 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body>
-<header class="min-h-screen bg-[url('./img/backimg.png')] bg-cover bg-center bg-no-repeat">
+<body class="bg-black text-white font-sans">
 
-  <!-- Navbar -->
-  <div class="container mx-auto flex justify-between items-center py-8 px-10">
-    
-    <img src="./img/Logo.png" alt="404" class="w-20">
+    <div class="relative overflow-hidden">
 
-    <ul class="flex gap-8 text-white">
-      <li class="hover:text-purple-400 cursor-pointer">About Us</li>
-      <li class="hover:text-purple-400 cursor-pointer">Web3ATL</li>
-      <li class="hover:text-purple-400 cursor-pointer">Accelerator</li>
-      <li class="hover:text-purple-400 cursor-pointer">Blog</li>
-      <li class="hover:text-purple-400 cursor-pointer">Contact</li>
-    </ul>
+        <div class="absolute top-[500px] -left-[100px] w-[900px]  pointer-events-none z-0  mix-blend-screen">
+            <img src="./img/408.png" class="w-full h-full object-contain" alt="">
+        </div>
+        <div class="absolute top-[1200px] -right-[200px] w-[800px] h-[800px] pointer-events-none z-0  mix-blend-screen">
+            <img src="./img/411.png" class="w-full h-full object-contain" alt="">
+        </div>
 
-  </div>
+        <header class="relative min-h-screen bg-[url('./img/backimg.png')] bg-cover bg-center bg-no-repeat z-10">
+            <div class="min-h-screen bg-[url('./img/406.png')] bg-cover bg-center bg-no-repeat">
+                
+                <nav class="container mx-auto flex justify-between items-center py-8 px-10">
+                    <img src="./img/Logo.png" alt="Logo" class="w-20">
+                    <ul class="hidden md:flex gap-8 cursor-pointer hover:text-blue-400 transition">
+                        <li class="hover:text-purple-400 transition">About Us</li>
+                        <li class="hover:text-purple-400 transition">Web3ATL</li>
+                        <li class="hover:text-purple-400 transition">Accelerator</li>
+                        <li class="hover:text-purple-400 transition">Blog</li>
+                        <li class="hover:text-purple-400 transition">Contact</li>
+                    </ul>
+                </nav>
 
-  <!-- Hero Content -->
-  <div class="container mx-auto flex items-center justify-between px-10 pt-20 ">
+                <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-10 pt-20">
+                    <div class="w-full md:w-1/2">
+                        <h1 class="text-5xl font-bold leading-tight">
+                            Build Inform Advance
+                        </h1>
+                        <p class="mt-6 text-gray-300 max-w-md">
+                            Lorem ipsum is placeholder text commonly used in the graphic,
+                            print, and publishing industries for previewing layouts.
+                        </p>
+                        <div class="mt-8 flex flex-wrap gap-4">
+                            <button class="px-6 py-3 rounded-lg font-medium bg-gradient-to-r from-[#1F8EBE] to-[#AE61ED] hover:scale-105 transition">
+                                Apply For Accelerator
+                            </button>
+                            <button class="relative p-[2px] rounded-lg bg-gradient-to-r from-[#1F8EBE] to-[#AE61ED] group">
+                                <span class="block px-6 py-3 rounded-[6px] bg-black group-hover:bg-transparent transition">
+                                    Learn More
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 flex justify-end mt-12 md:mt-0">
+                        <img src="./img/405.png" class="w-full max-w-[500px] animate-pulse" style="animation-duration: 3s" alt="Hero Illustration">
+                    </div>
+                </div>
+            </div>
+        </header>
 
-    <!-- Left Side -->
-    <div class="w-1/2 text-white">
-      <h1 class="text-5xl font-bold leading-tight">
-        Build Inform Advance
-      </h1>
+        <section class="relative z-10 py-24">
+            <div class="container mx-auto px-10 flex flex-col md:flex-row items-center justify-between gap-12">
+                <div class="w-full md:w-1/2">
+                    <img src="./img/407.png" class="w-full max-w-[450px] mx-auto" alt="Features">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-4xl font-bold mb-6">
+                        What is <span class="bg-gradient-to-r from-[#1F8EBE] to-[#AE61ED] bg-clip-text text-transparent">Web3ATL</span> ?
+                    </h2>
+                    <p class="mb-6 text-gray-400">
+                        Lorem ipsum is placeholder text commonly used in the graphic, print,<br> 
+                        and publishing industries for previewing layouts and visual mockups.
+                    </p>
+                    <p class="mb-8 text-gray-400 text-sm leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br>
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim<br>
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br>
+                        commodo consequat.
+                    </p>
+                    <button class="px-8 py-3 rounded-lg bg-gradient-to-r from-[#1F8EBE] to-[#AE61ED] hover:shadow-[0_0_20px_rgba(174,97,237,0.5)] transition">
+                        View Detail
+                    </button>
+                </div>
+            </div>
+        </section>
 
-      <p class="mt-6 text-gray-300 max-w-md">
-        Lorem ipsum is placeholder text commonly used in the graphic,
-        print, and publishing industries for previewing layouts.
-      </p>
+        <section class="relative z-10 py-20 px-10">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-24">
+                    Our <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#1F8EBE] to-[#AE61ED]">Vertical</span>
+                </h2>
 
-      <div class="mt-8 flex gap-4">
-        <button class="px-6 py-3 rounded-lg font-medium
-                       .bg-gradient-to-r from-purple-500 to-blue-500
-                       hover:opacity-90 transition">
-          Apply For Accelerator
-        </button>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-24">
+                    
+                    <div class="relative group bg-[#131129]/80 backdrop-blur-sm border border-white/10 rounded-2xl p-8 pt-20 flex flex-col items-center text-center hover:-translate-y-2 transition-all duration-300">
+                        <div class="absolute -top-16 flex items-center justify-center">
+                            <div class="absolute inset-0 bg-blue-500 blur-[40px] opacity-30 rounded-full"></div>
+                            <img src="./img/409.png" class="relative w-32 h-32 object-contain" alt="Education">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Education</h3>
+                        <p class="text-gray-400 text-sm mb-8">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing</p>
+                        <button class="mt-auto w-full py-3 rounded-xl bg-gradient-to-r from-[#1F8EBE] to-[#AE61ED]">Read More Detail</button>
+                    </div>
 
-        <button class="px-6 py-3 rounded-lg border border-purple-500
-                       hover:bg-purple-500 hover:text-white transition">
-          Learn More
-        </button>
-      </div>
+                    <div class="relative group bg-[#131129]/80 backdrop-blur-sm border border-white/10 rounded-2xl p-8 pt-20 flex flex-col items-center text-center hover:-translate-y-2 transition-all duration-300">
+                        <div class="absolute -top-16 flex items-center justify-center">
+                            <div class="absolute inset-0 bg-yellow-500 blur-[40px] opacity-20 rounded-full"></div>
+                            <img src="./img/410.png" class="relative w-32 h-32 object-contain" alt="Governance">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Governance</h3>
+                        <p class="text-gray-400 text-sm mb-8">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing.</p>
+                        <button class="mt-auto w-full py-3 rounded-xl bg-gradient-to-r from-[#1F8EBE] to-[#AE61ED]">Read More Detail</button>
+                    </div>
+
+                    <div class="relative group bg-[#131129]/80 backdrop-blur-sm border border-white/10 rounded-2xl p-8 pt-20 flex flex-col items-center text-center hover:-translate-y-2 transition-all duration-300">
+                        <div class="absolute -top-16 flex items-center justify-center">
+                            <div class="absolute inset-0 bg-blue-500 blur-[40px] opacity-30 rounded-full"></div>
+                            <img src="./img/409.png" class="relative w-32 h-32 object-contain" alt="Education">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Education</h3>
+                        <p class="text-gray-400 text-sm mb-8">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing</p>
+                        <button class="mt-auto w-full py-3 rounded-xl bg-gradient-to-r from-[#1F8EBE] to-[#AE61ED]">Read More Detail</button>
+                    </div>
+
+                    <div class="relative group bg-[#131129]/80 backdrop-blur-sm border border-white/10 rounded-2xl p-8 pt-20 flex flex-col items-center text-center hover:-translate-y-2 transition-all duration-300">
+                        <div class="absolute -top-16 flex items-center justify-center">
+                            <div class="absolute inset-0 bg-yellow-500 blur-[40px] opacity-20 rounded-full"></div>
+                            <img src="./img/410.png" class="relative w-32 h-32 object-contain" alt="Governance">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Governance</h3>
+                        <p class="text-gray-400 text-sm mb-8">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing.</p>
+                        <button class="mt-auto w-full py-3 rounded-xl bg-gradient-to-r from-[#1F8EBE] to-[#AE61ED]">Read More Detail</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    <section class="relative z-10 py-24 px-10">
+    <div class="max-w-7xl mx-auto">
+        
+        <h2 class="text-4xl font-bold text-center mb-16">
+            Our <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#1F8EBE] to-[#AE61ED]">Partners</span>
+        </h2>
+
+        <div class="flex flex-wrap items-center justify-center gap-10 md:gap-20">
+            
+            <div class="relative group cursor-pointer">
+                <div class="absolute inset-0 bg-blue-500/20 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <img src="./img/p1.png" class="relative w-32 md:w-44 h-auto object-contain filter brightness-90 hover:brightness-110 transition duration-300" alt="Partner 1">
+            </div>
+
+            <div class="relative group cursor-pointer">
+                <div class="absolute inset-0 bg-purple-500/20 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <img src="./img/p2.png" class="relative w-32 md:w-44 h-auto object-contain filter brightness-90 hover:brightness-110 transition duration-300" alt="Partner 2">
+            </div>
+
+            <div class="relative group cursor-pointer">
+                <div class="absolute inset-0 bg-blue-500/20 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <img src="./img/p3.png" class="relative w-32 md:w-44 h-auto object-contain filter brightness-90 hover:brightness-110 transition duration-300" alt="Partner 3">
+            </div>
+
+            <div class="relative group cursor-pointer">
+                <div class="absolute inset-0 bg-purple-500/20 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <img src="./img/p1.png" class="relative w-32 md:w-44 h-auto object-contain filter brightness-90 hover:brightness-110 transition duration-300" alt="Partner 4">
+            </div>
+
+            <div class="relative group cursor-pointer">
+                <div class="absolute inset-0 bg-purple-500/20 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <img src="./img/p2.png" class="relative w-32 md:w-44 h-auto object-contain filter brightness-90 hover:brightness-110 transition duration-300" alt="Partner 2">
+            </div>
+        </div>
     </div>
+     </section>
 
-    <!-- Right Side Image -->
-    <div class="w-1/2 flex justify-end">
-      <img src="./img/405.png"
-           class="w-\[500px]"
-           alt="building">
+    <section class="relative z-10 py-24">
+    <div class="container mx-auto px-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12">
+        
+        <div class="w-full md:w-1/2">
+            <img src="./img/407.png" class="w-full max-w-[450px] mx-auto" alt="Features">
+        </div>
+
+        <div class="w-full md:w-1/2">
+            <h2 class="text-4xl font-bold mb-6">
+                How to use <span class="bg-gradient-to-r from-[#1F8EBE] to-[#AE61ED] bg-clip-text text-transparent">Web3ATL</span> ?
+            </h2>
+            <p class="mb-6 text-gray-300">
+                        Lorem ipsum is placeholder text commonly used in the graphic, print,<br> 
+                        and publishing industries for previewing layouts and visual mockups.            </p>
+            <p class="mb-8 text-gray-300 text-sm leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br>
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim<br>
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br>
+                        commodo consequat.            </p>
+            <button class="px-8 py-3 rounded-lg bg-gradient-to-r from-[#1F8EBE] to-[#AE61ED] hover:shadow-[0_0_20px_rgba(174,97,237,0.5)] transition">
+                View Detail
+            </button>
+        </div>
     </div>
+     </section>
 
-  </div>
 
-</header>
+<section class="py-20 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+        
+        <div class="w-full md:w-1/2 flex justify-center">
+            <div class="relative">
+                <div class="absolute -inset-4  rounded-full"></div>
+                
+                <img src="./img/407.png" alt="Infrastructure Illustration" class="relative z-10 w-full max-w-md drop-shadow-2xl">
+            </div>
+        </div>
 
-   
-</body>
+        <div class="w-full md:w-1/2">
+            <h2 class="text-4xl font-bold mb-8 text-white">Contact Us</h2>
+            
+            <form action="#" class="space-y-4">
+
+                <!-- Input -->
+<div class="p-[2px] rounded-lg 
+            bg-gradient-to-r from-[#1F8EBE] to-[#AE61ED] mb-6">
+
+  <input type="text" 
+    placeholder="Your Name / Email"class="w-full bg-black rounded-lg px-4 py-3  text-white focus:outline-none  placeholder-gray-400">
+
+</div>
+
+
+<!-- Textarea -->
+<div class="p-[2px] rounded-lg  bg-gradient-to-r from-[#1F8EBE] to-[#AE61ED]">
+
+  <textarea rows="6"placeholder="Your Message" class="w-full bg-black rounded-lg px-4 py-3 text-white focus:outline-none placeholder-gray-400 resize-none"></textarea>
+
+</div>
+
+                
+
+                <button type="submit" 
+                    class="w-full bg-gradient-to-r from-[#1F8EBE] to-[#AE61ED] hover:from-cyan-400 hover:to-purple-500 text-white font-semibold py-3 rounded-lg transition-all transform hover:scale-[1.02] active:scale-95 shadow-lg shadow-cyan-500/20">
+                    Submit
+                </button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+          
+                
+     <footer class="container mx-auto flex justify-between items-center py-8 px-10">
+                    <img src="./img/Logo.png" alt="Logo" class="w-20">
+                    
+                    <ul class="hidden md:flex gap-8 cursor-pointer hover:text-blue-400 transition">
+                        <li class="hover:text-purple-400 transition">About Us</li>
+                        <li class="hover:text-purple-400 transition">Web3ATL</li>
+                        <li class="hover:text-purple-400 transition">Accelerator</li>
+                        <li class="hover:text-purple-400 transition">Blog</li>
+                        <li class="hover:text-purple-400 transition">Contact</li>
+         
+         
+                    </ul>
+      </footer>
+
+            
+        
+    </div> </body>
 </html>
